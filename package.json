@@ -23,12 +23,13 @@
     "url": "https://github.com/JeanDevonne/webpack-course-v4/issues"
   },
   "homepage": "https://github.com/JeanDevonne/webpack-course-v4#readme",
-  "dependencies": {
-    "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6",
-    "babel-loader": "^8.0.6"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/runtime": "^7.9.2",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",

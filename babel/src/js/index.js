@@ -1,10 +1,12 @@
 import "../css/index.css";
-import text from "./text.js";
+import search from "./search";
+import render from "./render";
 
-text();
-
-if (module.hot) {
-  module.hot.accept("./text.js", function() {
-    text();
-  });
-}
+const id = prompt('quien es ese poquemo?')
+search(id)
+  .then((data) => {
+    render(data)
+  })
+  .catch(() => {
+    console.log('no se encontraron registros')
+  })

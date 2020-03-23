@@ -29,8 +29,12 @@ module.exports = {
       },
       {
         test: /\.jpg|png|woff|eot|ttf|svg|mp4|webm$/,
-        use: "url-loader",
-        exclude: /node_modules/
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 90000,
+          }
+        }
       },
     ]
   },

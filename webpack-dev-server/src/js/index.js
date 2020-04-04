@@ -1,5 +1,10 @@
 import "../css/index.css";
+import text from "./text.js";
 
-console.log("Webpack dev server! 😀");
+text();
 
-document.body.innerHTML = "Webpack dev server! 😀";
+if (module.hot) {
+  module.hot.accept("./text.js", function() {
+    text();
+  });
+}
